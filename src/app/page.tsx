@@ -45,20 +45,20 @@ export default function Home() {
   return (
     <main className="max-w-5xl mx-auto my-20 bg-white p-4 border rounded-md">
       <div className="border-b pb-2 mb-6 flex items-center justify-between">
-        <h1 className="text-2xl flex font-bold">
+        <h1 className="text-2xl flex items-center font-bold">
           {selectedImages.length > 0 && (
             <span className="text-blue-500 ml-2">
               <BsFillCheckSquareFill />
             </span>
           )}
           {selectedImages.length > 0
-            ? `  ${selectedImages.length} File Selected`
+            ? `    ${selectedImages.length}   Files Selected`
             : "Gallery"}
         </h1>
 
         {selectedImages.length > 0 && (
           <button
-            className="text-red-500  py-1 px-3 rounded-md"
+            className="text-red-500 font-semibold py-1 px-3 rounded-md"
             onClick={handleDeleteSelected}
           >
             Delete Selected

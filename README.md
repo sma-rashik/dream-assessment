@@ -10,3 +10,4 @@ Live Demo: [View the Gallery](https://image-drag-ollyo.netlify.app/)
 - Next.js (v14)
 - TypeScript
 - Tailwind CSS
+- Sass
